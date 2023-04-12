@@ -1,0 +1,13 @@
+type Query {
+    cityByCountry(country: String) : [City]
+    cityById(id: Int) : City
+    cities: [City]
+}
+
+type City {
+    id: ID!
+    cityname: String!
+    country: String!
+    population: Int!
+    zipcode: Int!
+}
